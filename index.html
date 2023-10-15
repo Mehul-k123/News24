@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News24</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="world-news.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="logo" onclick="reload()">
+                <img src="world-news.png" alt="logo">
+            </a>
+   
+            <div class="search-bar flex">     
+                    <input id="search-text" type="text" class="news-input" placeholder="Enter a Category name">
+                    <button id="search-button" class="search-button">Search</button>
+            </div>
+
+        <div class="nav-main">
+            <ul class="nav-menu flex"> 
+                <li class="hover-link nav-item" id="science" onclick="onNavItemClick('science')">Science</li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                 <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                <li class="hover-link nav-item" id="current-affairs" onclick="onNavItemClick('current-affairs')">Current Affairs</li>
+            </ul>
+        </div>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    </nav>
+
+    <main>
+<div class="cards-container container flex" id="cards-container">
+
+</div>
+    </main>
+
+<template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="image loading " id="news-img">
+        </div>
+        <div class="card-content">
+<h3 id="news-title">This is the title</h3>
+<h6 class="news-source" id="news-source">end gadget  12/10/2023</h6>
+<p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci fugiat mollitia natus doloremque labore neque fugit, modi ex. At laboriosam omnis adipisci repellat reprehenderit perspiciatis dicta exercitationem id nisi vel.
+</p>
+        </div>
+    </div>
+</template>
+
+<footer>
+    <div class="footer flex">
+
+    <p>&nbsp;&nbsp; &copy; Made by - Mehul Kothari </p>
+    <div class="icons">
+        <a href="https://www.facebook.com/mehulkothari.jain/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://instagram.com/mehul_kothari02?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/mehul-kothari-009447227/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://github.com/Mehul-k123/" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+      </a>
+  
+    </div>
+</div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
